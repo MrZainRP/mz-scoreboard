@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: none;
+}
+
+#container {
+    height: 900px;
+    width: 80%;
+    margin: 100px auto 0;
+    background-color: rgba(0, 0, 0, 0.808);
+    font-family: 'Red Hat Display', sans-serif;
+    overflow:scroll;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+#head {
+    padding-top: 10px;
+    align-items: center;
+    text-align: center;
+
+    height: 70px;
+    width: 100%;
+    background-color: #2d2e30;
+    color: rgb(243, 144, 14);
+    text-shadow: black 2px 2px;
+}
+
+h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+#bplayers {
+    width: 20.5%;
+    height: 40px;
+    margin: 10px;
+    text-align: left;
+    font-size: 22px;
+    background-color: rgba(0, 0, 0, 0.808);
+    color: #EEE;
+    padding-top: 12px;
+    position: relative;
+    display: inline-block;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.808);
+}
+
+#myplayer {
+    width: 20.5%;
+    height: 40px;
+    margin: 10px;
+    text-align: left;
+    font-size: 22px;
+    text-shadow: rgba(0, 0, 0, 0.808); 1px 1px;
+    background-color: rgba(0, 0, 0, 0.808);
+    color: #EEE;
+    padding-top: 12px;
+    position: relative;
+    display: inline-block;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.808);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1371fd;
+    border-radius: 5px; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #0d5dd4; 
+}
+
+#bplayers #tiptext,
+#myplayer #tiptext {
+    visibility: hidden;
+    border-radius: 5px;
+    width: 200px;
+    background-color: #494949e0;
+    color: #fff;
+    text-align: left;
+    padding: 10px 10px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -100px;
+    z-index: 10;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+#tiptext {
+    padding: 5px;
+}
+  
+#bplayers:hover #tiptext,
+#myplayer:hover #tiptext {
+    visibility: hidden;
+}
+
+#footer {
+    position: relative;
+    bottom: 20px;
+    left: 25vw;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 50%;
+    background-color: #2d2e30;
+    color: #EEE;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    z-index: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    text-shadow: black 1px 1px;
+}
+
+#red {
+    color: rgb(211, 14, 14);
+}
+
+#green {
+    color: seagreen;
+}
